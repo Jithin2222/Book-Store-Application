@@ -1,0 +1,52 @@
+.glass-navbar {
+  background: rgba(255, 255, 255, 0.2); /* Transparent white */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  backdrop-filter: blur(10px); /* Blur effect */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+}
+
+.navbar .nav-link,
+.navbar-brand,
+.navbar .dropdown-item {
+  color: rgb(0, 0, 0) !important;
+}
+.glass-navbar .form-control {
+  font-size: 1rem; /* Search input font size */
+}
+.glass-navbar .navbar-brand {
+  font-size: 1.8rem; /* Brand name bigger */
+  font-weight: 600;
+}
+.glass-navbar .nav-link,
+.glass-navbar .dropdown-item,
+.glass-navbar .navbar-text {
+  font-size: 1.2rem; /* Links & text */
+}
+
+.navbar .nav-link:hover,
+.navbar .dropdown-item:hover {
+  color: #0026ff !important; /* Gold hover */
+}
+
+.animated-gradient-text {
+  background: linear-gradient(
+    270deg,
+    #ff7e5f,
+    #feb47b,
+    #6a11cb,
+    #2575fc
+  );
+  background-size: 600% 600%; /* makes animation smoother */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientMove 8s ease infinite;
+  font-weight: bold;
+}
+
+/* keyframes for moving gradient */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

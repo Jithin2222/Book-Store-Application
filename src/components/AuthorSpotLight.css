@@ -1,0 +1,23 @@
+.author-spotlight h2 {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+}
+
+.author-spotlight img {
+  border: 5px solid #f8f9fa;
+}
+
+.author-spotlight .card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.author-spotlight .card:hover {
+  transform: translateY(-5px);
+}
+.author-spotlight{
+    padding: 2rem;
+    background-color: #f8f9fabe;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}

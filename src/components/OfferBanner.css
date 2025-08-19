@@ -1,0 +1,59 @@
+/* Slim, modern promo strip */
+.offer-banner {
+  --banner-bg: linear-gradient(90deg, #5b8def, #7f53ac 60%, #647dee);
+  background: var(--banner-bg);
+  color: #fff;
+  padding: 10px 0;              /* slim height */
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle diagonal texture */
+.offer-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(255,255,255,0.08) 0px,
+    rgba(255,255,255,0.08) 8px,
+    transparent 8px,
+    transparent 16px
+  );
+  pointer-events: none;
+}
+
+.offer-emoji {
+  font-size: 1.1rem;
+  line-height: 1;
+  transform: translateY(-1px);
+}
+
+.offer-text {
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+/* thin vertical divider visible on md+ */
+.divider {
+  width: 1px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* Button styling */
+.cta-btn {
+  border-radius: 999px;
+  padding-inline: 14px;
+  font-weight: 600;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.08);
+}
+
+.cta-btn:hover {
+  filter: brightness(0.95);
+}
+
+/* Make text wrap nicely on small screens */
+@media (max-width: 576px) {
+  .offer-text { text-align: center; }
+}
