@@ -10,6 +10,7 @@ import romance from '../assets/images/romance.png';
 import racing from '../assets/images/racing.png';
 import novel from '../assets/images/novel.png';
 
+
 const CategoriesHome = () => {
 
     return(
@@ -21,7 +22,7 @@ const CategoriesHome = () => {
             </Container>
             <Container>
                 <Row>
-                    <Col sm={12} md={6} lg={4} className="g4 mb-4">
+                    <Col sm={12} md={6} lg={4} className="card-style g4 mb-4">
                         <Card style={{ width: '18rem' }}>
                             <Card.Img variant="top" src={action} />
                             <Card.Body>

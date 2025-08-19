@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Button, Container, Form, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import signupImg from "../assets/images/signup.png"; // ✅ imported image
-import "./Form.css";
+import signupImg from "../assets/images/signup.png"; 
+import "./Login.css";
 
 const Signup = () => {
   const [inputs, setInputs] = useState({});
@@ -28,16 +28,16 @@ const Signup = () => {
   };
 
   return (
-    <Container fluid className="signup-container">
+    <Container fluid className="signup-container p-0 m-0">
       <Row className="h-100 g-0">
         {/* Left image panel */}
-        <Col md={7} className="signup-image d-none d-md-block">
+        <Col md={8} className="signup-image">
           <img src={signupImg} alt="Signup" />
           <div className="overlay"></div>
         </Col>
 
         {/* Right form panel */}
-        <Col md={5} className="signup-form d-flex flex-column">
+        <Col md={4} className="signup-form">
           <div className="form-content">
             <h2 className="mb-4 text-center">Create an Account</h2>
             <Form onSubmit={handleSubmit}>

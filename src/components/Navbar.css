@@ -13,6 +13,11 @@
 .glass-navbar .form-control {
   font-size: 1rem; /* Search input font size */
 }
+.navbar-brand{
+  font-family: "Chela One", cursive;
+  padding: 2px;
+  font-weight: 100;
+}
 .glass-navbar .navbar-brand {
   font-size: 1.8rem; /* Brand name bigger */
   font-weight: 600;

@@ -10,4 +10,9 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Noto Sans', sans-serif;
 }

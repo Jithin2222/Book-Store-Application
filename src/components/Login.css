@@ -1,0 +1,77 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+/* Main container takes full height */
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+/* Left image panel */
+.signup-image {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.signup-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps image fitted */
+}
+
+/* Dark overlay for contrast */
+.signup-image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Right form panel */
+.signup-form {
+  background: #fff;
+  display: flex;
+  align-items: center;   /* vertical center */
+  justify-content: center;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.form-content {
+  width: 100%;
+  max-width: 350px; /* neat size */
+}
+
+/* Link styling */
+.login-link {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .signup-container {
+    flex-direction: column;
+  }
+
+  .signup-image {
+    height: 35vh; /* smaller image area for mobile */
+  }
+
+  .signup-form {
+    height: auto;
+    padding: 30px 20px;
+  }
+}
