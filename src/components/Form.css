@@ -1,3 +1,24 @@
+.signup-container {
+  height: 100vh;
+}
+
+.signup-image {
+  background-image: url("https://images.unsplash.com/photo-1512820790803-83ca734da794");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+.signup-form {
+  background: #ffffff;
+  height: 100%;   /* makes it same height as image */
+  padding: 40px;
+}
+
+.signup-form h2 {
+  font-weight: 600;
+}
+
 .content-login {
     max-width: 400px;
     margin: 100px auto 0 auto;
